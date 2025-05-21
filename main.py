@@ -11,11 +11,14 @@
 def add(a: float, b: float):
     return a + b
 
+
 def subtract(a: float, b: float):
     return a - b
 
+
 def multiply(a: float, b: float):
     return a * b
+
 
 def divide(a: float, b: float):
     return a / b
@@ -29,23 +32,23 @@ def main():
     # User Input
     # Pico: Replace input with Button Routine
     menu = input("calc:\n1) Add\n2) Subtract\n3) Multiply\n4) Divide\n  ")
-    
+
     if menu == "1":
-        a=float(input("num1: "))
-        b=float(input("num2: "))
-        print(add(a,b))
+        a = float(input("num1: "))
+        b = float(input("num2: "))
+        print(add(a, b))
     elif menu == "2":
-        a=float(input("num1: "))
-        b=float(input("num2: "))
-        print(subtract(a,b))
+        a = float(input("num1: "))
+        b = float(input("num2: "))
+        print(subtract(a, b))
     elif menu == "3":
-        a=float(input("num1: "))
-        b=float(input("num2: "))
-        print(multiply(a,b))
+        a = float(input("num1: "))
+        b = float(input("num2: "))
+        print(multiply(a, b))
     elif menu == "4":
-        a=float(input("num1: "))
-        b=float(input("num2: "))
-        print(divide(a,b))
+        a = float(input("num1: "))
+        b = float(input("num2: "))
+        print(divide(a, b))
     else:
         print("invalid input")
 
