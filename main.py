@@ -8,10 +8,17 @@
 
 
 # Funxtions
-def add():
-    num1 = input("num1:  ")
-    num2 = input("num2:  ")
-    return num1 + num2
+def add(a: float, b: float):
+    return a + b
+
+def subtract(a: float, b: float):
+    return a - b
+
+def multiply(a: float, b: float):
+    return a * b
+
+def divide(a: float, b: float):
+    return a / b
 
 
 def main():
@@ -20,20 +27,30 @@ def main():
     # lcd = resources.LCD(2, 0x27, True)
 
     # User Input
-    menu = input("calc:\n1) Add  ")
-
+    # Pico: Replace input with Button Routine
+    menu = input("calc:\n1) Add\n2) Subtract\n3) Multiply\n4) Divide\n  ")
+    
     if menu == "1":
-        print(add())
+        a=float(input("num1: "))
+        b=float(input("num2: "))
+        print(add(a,b))
     elif menu == "2":
-        print("nothing")
+        a=float(input("num1: "))
+        b=float(input("num2: "))
+        print(subtract(a,b))
     elif menu == "3":
-        print("nothing")
+        a=float(input("num1: "))
+        b=float(input("num2: "))
+        print(multiply(a,b))
+    elif menu == "4":
+        a=float(input("num1: "))
+        b=float(input("num2: "))
+        print(divide(a,b))
     else:
         print("invalid input")
-    # Use Try / Catch while using file usage.
 
     # Output to LCD Display
-    #    lcd.message(" record recorded")
+    #    lcd.message("calculation completed")
     #    time.sleep(10)
     #    lcd.clear()
 
