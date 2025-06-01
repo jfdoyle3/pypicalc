@@ -1,7 +1,12 @@
 #GitHub/Doc for I2cLcd
 # https://github.com/dhylands/python_lcd
-import utime
+import sys
+import os
 
+# Add a directory to sys.path
+sys.path.append("/display")
+
+import utime
 import machine
 from machine import I2C
 from lcd_api import LcdApi

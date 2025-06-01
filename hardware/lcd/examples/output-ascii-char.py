@@ -1,3 +1,9 @@
+import sys
+import os
+
+# Add a directory to sys.path
+sys.path.append("/display")
+
 from machine import I2C
 from lcd_api import LcdApi
 from pico_i2c_lcd import I2cLcd
