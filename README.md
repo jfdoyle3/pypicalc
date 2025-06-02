@@ -1,8 +1,4 @@
-# Starter Repository Template
+# Pico Calculator
 
-This Repository has a customized gitignore file
-ignores:
-VS CODE, Visual Studio, Eclipse IDE, Intellij IDEA, Python,
-Gradle, Maven.
-
-- added Visual Studio in gitignore 1/31/2023
+Google Search on Keyboard Martix building
+https://www.google.com/search?q=building+a+keyboard+matrix&ie=UTF-8
