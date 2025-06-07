@@ -45,14 +45,8 @@ def main():
     print("main")
     i2c = I2C(0, sda=machine.Pin(0), scl=machine.Pin(1), freq=400000)
     lcd = I2cLcd(i2c, I2C_ADDR, I2C_NUM_ROWS, I2C_NUM_COLS)    
-    lcd.putstr("It Works!")
-    utime.sleep(2)
+    
     lcd.clear()
-    happy_face = bytearray([0x10,0x08,0x04,0x1F,0x04,0x04,0x02,0x01])
-    lcd.custom_char(0, happy_face)
-    lcd.putchar(chr(0))
-    lcd.putchar(b'\x00')
-
 
     # User Input
     # Pico: Replace input with Button Routine
