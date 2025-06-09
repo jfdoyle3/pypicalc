@@ -37,6 +37,7 @@ def divide(a: float, b: float):
 
 
 def main():
+    '''
     I2C_ADDR     = 0x27
     I2C_NUM_ROWS = 2
     I2C_NUM_COLS = 16
@@ -47,7 +48,7 @@ def main():
     lcd = I2cLcd(i2c, I2C_ADDR, I2C_NUM_ROWS, I2C_NUM_COLS)    
     
     lcd.clear()
-
+    '''
     # User Input
     # Pico: Replace input with Button Routine
     menu = input("calc:\n1) Add\n2) Subtract\n3) Multiply\n4) Divide\n  ")
