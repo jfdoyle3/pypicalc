@@ -17,16 +17,18 @@ from machine import I2C
 from lcd_api import LcdApi
 from pico_i2c_lcd import I2cLcd
 
-# Setup LCD
+# Setup LCD Address
 I2C_ADDR     = 0x27
 I2C_NUM_ROWS = 2
 I2C_NUM_COLS = 16
 
- #Test function for verifying basic functionality
-
+# Initialize LCD
 i2c = I2C(0, sda=machine.Pin(0), scl=machine.Pin(1), freq=400000)
 LCD = I2cLcd(i2c, I2C_ADDR, I2C_NUM_ROWS, I2C_NUM_COLS)    
 
+# Setup Button
+button=machine.Pin(14,machine.Pin.IN)
+# if button.value()==1 then button is pressed.
 
 # Functions
 def add(a: float, b: float):
